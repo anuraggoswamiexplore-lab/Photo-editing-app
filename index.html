@@ -1657,4 +1657,5 @@
         document.getElementById('downloadBtn').onclick = () => { selectObject(null); render(); const format = document.getElementById('exportFormat').value; const link = document.createElement('a'); let mimeType = 'image/png'; let extension = 'png'; if (format === 'jpg') { mimeType = 'image/jpeg'; extension = 'jpg'; } else if (format === 'webp') { mimeType = 'image/webp'; extension = 'webp'; } link.download = `javagoat.${extension}`; link.href = state.canvas.toDataURL(mimeType, 0.95); link.click(); };
     </script>
 </body>
+
 </html>
